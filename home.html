@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="bg-[#1980e6] px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+          alt="Logo"
+          class="h-8 w-8 rounded-full"
+        />
+        <span class="text-white text-xl font-bold">Telemedicine</span>
+      </div>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="home.html" class="text-white hover:underline">Home</a></li>
+        <li><a href="#" class="text-white hover:underline">Appointments</a></li>
+        <li><a href="#" class="text-white hover:underline">Messages</a></li>
+        <li><a href="#" class="text-white hover:underline">Profile</a></li>
+      </ul>
+      <button
+        class="md:hidden text-white focus:outline-none"
+        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden bg-[#1980e6] px-4 py-2"
+    >
+      <ul class="flex flex-col gap-2">
+        <li><a href="home.html" class="text-white block py-1">Home</a></li>
+        <li><a href="#" class="text-white block py-1">Appointments</a></li>
+        <li><a href="#" class="text-white block py-1">Messages</a></li>
+        <li><a href="#" class="text-white block py-1">Profile</a></li>
+      </ul>
+    </div>
+    <!-- Navbar End -->
+
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-white p-4 pb-2 justify-between">
+          <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12 pr-12">Home</h2>
+        </div>
+        <div class="@container">
+          <div class="@[480px]:px-4 @[480px]:py-3">
+            <div
+              class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-xl min-h-[218px]"
+              style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://cdn.usegalileo.ai/sdxl10/8129e0f8-7c34-44d0-9bfe-65fdb963f851.png");'
+            >
+              <div class="flex p-4"><p class="text-white tracking-light text-[28px] font-bold leading-tight">Welcome to telemedicine for rural cameroon!</p></div>
+            </div>
+          </div>
+        </div>
+        <p class="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">We are dedicated to providing accessible, affordable and compassionate care for all.</p>
+        <div class="flex flex-col gap-10 px-4 py-10 @container">
+          <div class="flex flex-col gap-4">
+            <h1
+              class="text-[#111418] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+            >
+              How can we help you today?
+            </h1>
+            <p class="text-[#111418] text-base font-normal leading-normal max-w-[720px]">Book an appointment, view your records, or contact your doctor.</p>
+          </div>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#dce0e5] bg-white p-4 flex-col">
+              <div class="text-[#111418]" data-icon="Calendar" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#111418] text-base font-bold leading-tight">Book Appointment</h2>
+            </div>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#dce0e5] bg-white p-4 flex-col">
+              <div class="text-[#111418]" data-icon="FirstAid" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M216,88H168V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V88H40a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16H88v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V168h48a16,16,0,0,0,16-16V104A16,16,0,0,0,216,88Zm0,64H160a8,8,0,0,0-8,8v56H104V160a8,8,0,0,0-8-8H40V104H96a8,8,0,0,0,8-8V40h48V96a8,8,0,0,0,8,8h56Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#111418] text-base font-bold leading-tight">View EMR</h2>
+            </div>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#dce0e5] bg-white p-4 flex-col">
+              <div class="text-[#111418]" data-icon="Phone" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#111418] text-base font-bold leading-tight">Contact Doctor</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex px-4 py-3">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#1980e6] text-white text-base font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">Book an appointment</span>
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#f0f2f4] bg-white px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#111418]" href="#">
+            <div class="text-[#111418] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]" href="#">
+            <div class="text-[#637588] flex h-8 items-center justify-center" data-icon="Calendar" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]">Appointments</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]" href="#">
+            <div class="text-[#637588] flex h-8 items-center justify-center" data-icon="ChatDots" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M216,48H40A16,16,0,0,0,24,64V224a15.85,15.85,0,0,0,9.24,14.5A16.13,16.13,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78.69.69,0,0,0,.13-.11L82.5,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H82.5a16,16,0,0,0-10.3,3.75l-.12.11L40,224V64H216ZM116,128a12,12,0,1,1,12,12A12,12,0,0,1,116,128Zm-44,0a12,12,0,1,1,12,12A12,12,0,0,1,72,128Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]">Messages</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]" href="#">
+            <div class="text-[#637588] flex h-8 items-center justify-center" data-icon="Person" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M160,40a32,32,0,1,0-32,32A32,32,0,0,0,160,40ZM128,56a16,16,0,1,1,16-16A16,16,0,0,1,128,56Zm90.34,78.05L173.17,82.83a32,32,0,0,0-24-10.83H106.83a32,32,0,0,0-24,10.83L37.66,134.05a20,20,0,0,0,28.13,28.43l16.3-13.08L65.55,212.28A20,20,0,0,0,102,228.8l26-44.87,26,44.87a20,20,0,0,0,36.41-16.52L173.91,149.4l16.3,13.08a20,20,0,0,0,28.13-28.43Zm-11.51,16.77a4,4,0,0,1-5.66,0c-.21-.2-.42-.4-.65-.58L165,121.76A8,8,0,0,0,152.26,130L175.14,217a7.72,7.72,0,0,0,.48,1.35,4,4,0,1,1-7.25,3.38,6.25,6.25,0,0,0-.33-.63L134.92,164a8,8,0,0,0-13.84,0L88,221.05a6.25,6.25,0,0,0-.33.63,4,4,0,0,1-2.26,2.07,4,4,0,0,1-5-5.45,7.72,7.72,0,0,0,.48-1.35L103.74,130A8,8,0,0,0,91,121.76L55.48,150.24c-.23.18-.44.38-.65.58a4,4,0,1,1-5.66-5.65c.12-.12.23-.24.34-.37L94.83,93.41a16,16,0,0,1,12-5.41h42.34a16,16,0,0,1,12,5.41l45.32,51.39c.11.13.22.25.34.37A4,4,0,0,1,206.83,150.82Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+          </a>
+        </div>
+        <div class="h-5 bg-white"></div>
+      </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="bg-[#1980e6] text-white py-4 mt-8">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-2 md:mb-0 font-semibold">
+          &copy; 2025 Telemedicine for Rural Cameroon
+        </div>
+        <div class="flex gap-4 text-sm">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="mailto:support@telemedicine.cm" class="hover:underline">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

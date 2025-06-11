@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>select Doctor</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+  <nav class="bg-[#1980e6] px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Logo" class="h-8 w-8 rounded-full" />
+      <span class="text-white text-xl font-bold">Telemedicine</span>
+    </div>
+    <ul class="hidden md:flex gap-6">
+      <li><a href="home.html" class="text-white hover:underline">Home</a></li>
+      <li><a href="#" class="text-white hover:underline">Appointments</a></li>
+      <li><a href="#" class="text-white hover:underline">Messages</a></li>
+      <li><a href="#" class="text-white hover:underline">Profile</a></li>
+    </ul>
+    <button class="md:hidden text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-[#1980e6] px-4 py-2">
+    <ul class="flex flex-col gap-2">
+      <li><a href="home.html" class="text-white block py-1">Home</a></li>
+      <li><a href="#" class="text-white block py-1">Appointments</a></li>
+      <li><a href="#" class="text-white block py-1">Messages</a></li>
+      <li><a href="#" class="text-white block py-1">Profile</a></li>
+    </ul>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- ...existing code... -->
+    <div class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div>
+        <div class="flex items-center bg-white p-4 pb-2 justify-between">
+          <h2 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12 pr-12">Select a specialty</h2>
+        </div>
+        <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Popular</h2>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6a68171f-ee39-48b7-b8ac-b8857982d178.png");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em]">General Medicine</p>
+              <div class="flex items-end gap-3 justify-between">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#60778a] text-base font-normal leading-normal">Common diseases, cold symptoms, general health advice</p>
+                  <p class="text-[#60778a] text-base font-normal leading-normal">200+ doctors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Specialties</h2>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#111518] text-base font-bold leading-tight">Pediatrics</p>
+                <p class="text-[#60778a] text-sm font-normal leading-normal">Children's health and development</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">View all</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/8baddc6c-81f3-4c71-8992-110ab0b546cc.png");'
+            ></div>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#111518] text-base font-bold leading-tight">Psychiatry</p>
+                <p class="text-[#60778a] text-sm font-normal leading-normal">Mental health, stress, anxiety</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">View all</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/38046a33-8d8a-4d49-a3be-027c5bd14962.png");'
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex px-4 py-3">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#2094f3] text-white text-base font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">Next</span>
+          </button>
+        </div>
+        <div class="h-5 bg-white"></div>
+      </div>
+    </div>
+    <!-- ...existing code... -->
+    <div class="h-5 bg-white"></div>
+  </div>
+</div>
+<!-- Footer Start -->
+<footer class="bg-[#1980e6] text-white py-4 mt-8">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-2 md:mb-0 font-semibold">
+      &copy; 2025 Telemedicine for Rural Cameroon
+    </div>
+    <div class="flex gap-4 text-sm">
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Terms of Service</a>
+      <a href="mailto:support@telemedicine.cm" class="hover:underline">Contact</a>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+  </body>
+</html>
